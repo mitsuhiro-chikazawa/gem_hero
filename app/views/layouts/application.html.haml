@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Gem's Hero
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application'
+  %body
+    .Header
+      .Header__Title
+        = image_tag("/images/line_747578082184715.jpg", width: '25%',height: '100%',alt: "画像")
+      .Header__LastInfo
+        ここに電光掲示板的な情報配信
+    .Body
+      = yield
+    .Footer
+      .Footer__Text
+        【版権等について】版権元の方とよく話し合った上で動画を公開しております。
+        %br
+        なお、ジェムズヒーロー本編に関しましては、収益化しておりません。
+        %br
+        権利関係についての版権元、またはジェムズヒーロー公式へのお問い合わせはご遠慮ください。
+      .Footer__Content
+        企画・制作：ryu1/田沼プロダクション

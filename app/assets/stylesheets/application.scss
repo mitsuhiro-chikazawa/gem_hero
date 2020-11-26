@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(247, 204, 125);
+}
+
+.Header {
+  width: 100vw;
+  height: 33vh;
+  background-color: white;
+  &__Title {
+    height: 80%;
+    text-align: center;
+  }
+  &__LastInfo {
+    width: 70%;
+    height: 30px;
+    margin: 20px 15% 10px 15%;
+    background-color: black;
+    color: orange;
+    padding: 1px;
+  }
+}
+
+.Body {
+  width: calc(100vw - 30%);
+  height: 250vh;
+  background-color: white;
+  text-align: center;
+  margin: 0px 15%;
+}
+
+@import "reset";
+@import "character";
+@import "creater";
+@import "news";
+@import "member";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.Footer {
+  width: 100vw;
+  height: 15vh;
+  background-color: rgb(94, 86, 86);
+  text-align: center;
+  color: white;
+  padding-top: 18px;
+  &__Text {
+    font-size: 18px;
+  }
+  &__Content {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,13 @@
+- member.each do |person|
+  .Member
+    .Member__Image
+    -# - if person.createrimages.image.present?
+    -#   = image_tag peson.createrimages.image.url, class: 'Person__image'
+    -# - if person.characterimages.image.present?
+    -#   = image_tag person.characterimages.image.url, class: 'Person__image'
+
+    .Member__Info
+      .Member__Info__Name
+        = person.name
+      .Member__Info__Intro
+        = person.introduction
