@@ -8,19 +8,21 @@ body {
 
 .Header {
   width: 100vw;
-  height: 33vh;
-  background-color: white;
+  height: 25vh;
+  background-color: black;
   &__Title {
-    height: 80%;
+    height: 57%;
     text-align: center;
+    background-image: url("/images/1606910908691.jpg");
   }
   &__LastInfo {
     width: 70%;
-    height: 30px;
-    margin: 20px 15% 10px 15%;
+    height: 60px;
+    margin: 23px 15% 5px 15%;
     background-color: black;
     color: orange;
-    padding: 1px;
+    font-size: 36px;
+    font-weight: bold;
   }
 }
 
